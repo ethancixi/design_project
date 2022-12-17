@@ -37,4 +37,17 @@ body {
   font-size: 13px;
 }
 
-/*# sourceMappingURL=style.css.map */
+#check_validazione {
+  text-align: center;
+  border-radius: 12px;
+  width: 100%;
+  display: none;
+}
+
+#check_validazione i {
+  display: none;
+}
+
+#redirectmessage {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
