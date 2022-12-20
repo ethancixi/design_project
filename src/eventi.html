@@ -1,58 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="../style/style.css" />
-    <title>angularjs boostrap test</title>
-  </head>
 
-  <body>
-    <header
-      class="hero d-flex justify-content-center align-items-center"
-      style="background-image: url(../assets/img/eventi.jpg)"
-    >
-      <div class="row">
-        <div class="column">
-          <h1 class="text-white title-paragraph text-center">Eventi</h1>
-          <p class="text-white text-center">
-            E se non avessimo ancora idea di cosa scrivere qui? Cosa
-            succederebbe?
-          </p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../style/style.css" />
+  <title>wEventi</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-transparent position-fixed position-sticky pb-2">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand">
+        <h1 class="text-white title-paragraph">weAct</h1>
+      </a>
+      <button class="navbar-toggler btn-close-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="campagne.html">Campagne</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="eventi.html">Eventi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="registrazione.html">Registrazione</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="articoli.html">Articoli</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="about.html">About</a>
+          </li>
+        </ul>
       </div>
-    </header>
-
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col col-lg-7 p-3">
-            <h1 class="text-white title-paragraph">
-              Ecco gli eventi in programma:
-            </h1>
-            <p class="text-white">vaivaivai:</p>
-          </div>
+    </div>
+  </nav>
+  <header class="hero d-flex justify-content-center align-items-center"
+    style="background-image: url(../assets/img/eventi.jpg)">
+    <div class="row">
+      <div class="column">
+        <h1 class="text-white title-paragraph text-center">Eventi</h1>
+        <p class="text-white text-center">
+          E se non avessimo ancora idea di cosa scrivere qui? Cosa
+          succederebbe?
+        </p>
+      </div>
+    </div>
+  </header>
+  <section ng-App="myApp">
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-5 p-3">
+          <h1 class="text-white title-paragraph">
+            Ecco gli eventi in programma:
+          </h1>
+          <p class="text-white">Iscriviti, riceverai aggiornamenti e news via mail!</p>
         </div>
         <div class="row">
-          <div class="card">
-            <img
-              class="card-img-top-edited"
-              src="../assets/img/eventi_cards/zaino.jpg"
-              alt="Card image cap"
-            />
+          <!--CARDS -->
+          <!--CARD 1 -->
+          <div class="card" style="width: 18rem;" ng-Controller="evento1Ctrl">
+            <img class="card-img-top" src="../assets/img/eventi_cards/zaino.jpg" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Fresh man dell'anno</h5>
+              <h5 class="card-title">Evento1</h5>
               <p class="card-text">
-                Morto un ratto non lo piangeranno manco i famigliari
+              <div class="div-copy" ng-click="ShowHide()">
+                {{divcopydescr}}
+                <i ng-class="{'bi bi-chevron-compact-down': !mostra, 'bi bi-chevron-compact-up': mostra}"></i>
+              </div>
+              <div ng-show="mostra" class="mostra">
+                <br>
+                <p>Esempio di copy!! scrivi scrivi descrivi l'evento, blablablabla dahsiusihsba suidsabid dbdh hfh ee e
+                  e e eeb dhbdajajs sba</p>
+              </div>
               </p>
             </div>
             <ul class="list-group list-group-flush">
@@ -67,41 +95,97 @@
               </li>
             </ul>
             <div class="card-body" style="text-align: center">
-              <a href="#" class="card-link">Condividi</a>
+              <i ng-class="{'bi bi-bookmark-check-fill': iscritto, 'bi bi-bookmark': !iscritto}"></i>
+              <a class="card-link" ng-click="iscriviti()"
+                ng-class="{'card-link': !iscritto, 'card-link-iscritto': iscritto}">{{iscrittostringa}}</a>
             </div>
           </div>
-          <div class="card">
-            <img
-              class="card-img-top-edited"
-              src="../assets/img/eventi_cards/speech.jpg"
-              alt="Card image cap"
-            />
+          <!--CARD 2 -->
+          <div class="card" style="width: 18rem;" ng-Controller="evento2Ctrl">
+            <img class="card-img-top" src="../assets/img/eventi_cards/speech.jpg" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Bbbbbbbb</h5>
-              <p class="card-text">descrizione del secondo evento</p>
+              <h5 class="card-title">Evento2</h5>
+              <p class="card-text">
+              <div class="div-copy" ng-click="ShowHide()">
+                {{divcopydescr}}
+                <i ng-class="{'bi bi-chevron-compact-down': !mostra, 'bi bi-chevron-compact-up': mostra}"></i>
+              </div>
+              <div ng-show="mostra" class="mostra">
+                <br>
+                <p> Secondo Esempio di copy!! scrivi scrivi descrivi l'evento di nuovo, blablablabla dahsiusihsba
+                  suidsabid dbdh hfh ee e e e eeb dhbdajajs sba</p>
+              </div>
+              </p>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <i class="bi-alarm"></i> 20:00 - 23:00
+                <i class="bi-alarm"></i> 15:30 - 18:00
               </li>
               <li class="list-group-item">
-                <i class="bi bi-calendar-date"></i> 8 dicembre 2022
+                <i class="bi bi-calendar-date"></i> 18 settembre 2022
               </li>
               <li class="list-group-item">
                 <i class="bi bi-geo-alt"></i> Torino, Italia
               </li>
             </ul>
             <div class="card-body" style="text-align: center">
-              <a href="#" class="card-link">Condividi</a>
+              <i ng-class="{'bi bi-bookmark-check-fill': iscritto, 'bi bi-bookmark': !iscritto}"></i>
+              <a class="card-link" ng-click="iscriviti()"
+                ng-class="{'card-link': !iscritto, 'card-link-iscritto': iscritto}">{{iscrittostringa}}</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+  <script>
+    var app = angular.module('myApp', ['ngAnimate']);
+    //devo per forza avere tanti controller quanti eventi, per poter controllare in 
+    //modo separato tutte le tendine per leggere il copy.
+    app.controller('evento1Ctrl', function ($scope) {
+      $scope.mostra = false;
+      $scope.divcopydescr = "Leggi la descrizione";
+      $scope.ShowHide = function () {
+        if (!$scope.mostra) {
+          $scope.mostra = true;
+          $scope.divcopydescr = "Riduci descrizione";
+        } else {
+          $scope.mostra = false;
+          $scope.divcopydescr = "Leggi la descrizione";
+        }
+      };
+      $scope.iscritto = false;
+      $scope.iscrittostringa = "Iscriviti";
+      $scope.iscriviti = function () {
+        $scope.iscritto = true;
+        $scope.iscrittostringa = "Sei iscritto";
+      }
+    });
+    app.controller('evento2Ctrl', function ($scope) {
+      $scope.mostra = false;
+      $scope.divcopydescr = "Leggi la descrizione";
+      $scope.ShowHide = function () {
+        if (!$scope.mostra) {
+          $scope.mostra = true;
+          $scope.divcopydescr = "Riduci descrizione";
+        } else {
+          $scope.mostra = false;
+          $scope.divcopydescr = "Leggi la descrizione";
+        }
+      };
+      $scope.iscritto = false;
+      $scope.iscrittostringa = "Iscriviti";
+      $scope.iscriviti = function () {
+        $scope.iscritto = true;
+        $scope.iscrittostringa = "Sei iscritto";
+      }
+    });
+  </script>
+</body>
+
 </html>

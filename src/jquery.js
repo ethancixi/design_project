@@ -12,4 +12,5 @@ $(document).ready(function () {
         }, 10000);
 
     });
+    //EVENTI.HTML
 });
