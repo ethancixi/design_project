@@ -76,7 +76,7 @@ xmlhttp.onreadystatechange = function () {
 };
 xmlhttp.open("GET", "https://data.cityofnewyork.us/resource/c3uy-2p5r.json", true);
 xmlhttp.send();
-const places = ["New York City", "Bronx", "Manhattan", "Queens", "Staten Island"];
+const places = ["New York City", "Bronx", "Manhattan", "Queens", "Staten Island", "Brooklyn"];
 const valueNOx = [];
 const valueAirTox = [];
 const valueSO2 = [];
