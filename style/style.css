@@ -95,4 +95,62 @@ body {
   width: 18rem;
   margin-left: -0.81rem;
   margin-top: -0.02rem;
+}
+
+.cardcampagne {
+  margin: auto;
+  background-color: white;
+  text-align: left;
+  border-radius: 24px;
+  padding: 1.2rem;
+}
+
+.cardcampagne h4 {
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+
+.buttonsdiv {
+  margin-top: 1.8rem;
+  margin-left: 3rem;
+  margin-bottom: 1.8rem;
+}
+
+.buttoncanvas {
+  width: 13rem;
+  font-family: Poppins, sans-serif;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  background-color: white;
+  border: 2px solid #FFDBA4;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.buttoncanvas:hover {
+  color: #FFDBA4;
+}
+
+.buttoncanvasselected {
+  width: 13rem;
+  font-family: Poppins, sans-serif;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  background-color: #FFDBA4;
+  border: none;
+  border-radius: 24px;
+  cursor: not-allowed;
+}
+
+.cardcampagne-body {
+  font-family: Poppins, sans-serif;
+  text-align: center;
+}
+
+.card-bodycampagne canvas {
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */
