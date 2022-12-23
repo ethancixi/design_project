@@ -65,7 +65,8 @@
       <br>
       <div class="row justify-content-center">
         <div class="col-11">
-          <h2 class="title-paragraph"><span class="text-red">1. </span><span class="text-white">Qualità dell'aria</span></h2>
+          <h2 class="title-paragraph"><span class="text-red">1. </span><span class="text-white">Qualità dell'aria</span>
+          </h2>
         </div>
       </div>
       <br>
@@ -79,7 +80,9 @@
             </div>
             <div class="cardcampagne-body">
               <canvas id="canvas"></canvas>
-              <br><p class="fontechart">Fonte: <a href="https://data.cityofnewyork.us/resource/c3uy-2p5r.json" target="_blank">Città di New York</a></p>
+              <br>
+              <p class="fontechart">Fonte: <a href="https://data.cityofnewyork.us/resource/c3uy-2p5r.json"
+                  target="_blank">Città di New York</a></p>
             </div>
           </div>
         </div>
@@ -96,22 +99,26 @@
             veicoli elettrici, la città continua a lottare per mantenere livelli di inquinamento accettabili.
             <br><br>Tuttavia,
             negli ultimi anni ci sono stati progressi significativi nella <b>riduzione delle emissioni di inquinanti</b>
-            atmosferici a New York, e la qualità dell'aria sta lentamente migliorando.</p>
+            atmosferici a New York, e la qualità dell'aria sta lentamente migliorando.
+          </p>
         </div>
       </div>
       <div class="row">
         <div class="col col-lg-7" style="padding: 2rem;">
           <h3 class="text-yellow title-paragraph">Cosa facciamo</h3><br>
           <p class="text-white">
-            L'attivismo per l'aria pulita in città è un movimento globale che mira a <b>migliorare la qualità dell'aria che
-            respiriamo nelle nostre città</b>. Ci sono molti modi in cui le persone possono partecipare attivamente
+            L'attivismo per l'aria pulita in città è un movimento globale che mira a <b>migliorare la qualità dell'aria
+              che
+              respiriamo nelle nostre città</b>. Ci sono molti modi in cui le persone possono partecipare attivamente
             all'attivismo per l'aria pulita, sia a livello individuale che collettivo.
             <br><br>
-            A livello individuale, le persone possono <b>adottare stili di vita più sostenibili</b>, come utilizzare <b>trasporti
-            pubblici o veicoli elettrici</b> invece di quelli a benzina o diesel, o utilizzare <b>energie rinnovabili</b> per
+            A livello individuale, le persone possono <b>adottare stili di vita più sostenibili</b>, come utilizzare
+            <b>trasporti
+              pubblici o veicoli elettrici</b> invece di quelli a benzina o diesel, o utilizzare <b>energie
+              rinnovabili</b> per
             riscaldare le proprie case. Inoltre, possono fare la loro parte per ridurre le emissioni di inquinanti
             atmosferici promuovendo pratiche sostenibili nella propria vita quotidiana, come il <b>riciclaggio e il
-            compostaggio dei rifiuti</b>.
+              compostaggio dei rifiuti</b>.
             <br><br>
             A livello collettivo, le persone possono partecipare a <b>manifestazioni e proteste</b> per sensibilizzare
             l'opinione pubblica e le autorità sulla questione dell'inquinamento dell'aria.
@@ -122,14 +129,61 @@
             <h4>Sostanze tossiche presenti nell'aria di New York City</h4>
             <div class="cardcampagne-body">
               <canvas id="piechart"></canvas>
-              <br><p class="fontechart">Fonte: <a href="https://data.cityofnewyork.us/resource/c3uy-2p5r.json" target="_blank">Città di New York</a></p>
+              <br>
+              <p class="fontechart">Fonte: <a href="https://data.cityofnewyork.us/resource/c3uy-2p5r.json"
+                  target="_blank">Città di New York</a></p>
             </div>
           </div>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-11">
-          <h2 class="title-paragraph"><span class="text-red">2. </span><span class="text-white">E mo' ti devi inventare qualcosa Samuelino</span></h2>
+          <h2 class="title-paragraph"><span class="text-red">2. </span><span class="text-white">Rifiuti</span></h2>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col col-lg-4">
+          <h3 class="text-yellow title-paragraph">Situazione attuale</h3><br>
+          <p class="text-white"> La media di rifiuti pro capite <b>dipende da molti fattori</b>, come il livello di sviluppo
+            economico, il tipo di economia, la densità di popolazione e le abitudini di consumo dei singoli individui.
+            <br><br>È importante notare che aumentare la media di rifiuti pro capite può avere conseguenze negative per l'ambiente
+            e la salute umana, quindi è <b>importante promuovere pratiche sostenibili di gestione dei rifiuti</b> e <b>ridurre la
+            produzione di rifiuti inutili</b>.
+          </p>
+        </div>
+        <div class="col col-lg-8">
+          <div class="cardcampagne">
+            <h4>Rifiuti pro-capite</h4>
+            <div class="buttonsdiv">
+              <button class="buttoncanvasselected" onclick="mediaeuropea()" id="eu_button" disabled>Media
+                europea</button>
+              <button class="buttoncanvas" onclick="paesieuropei()" id="paesi_button">Tutti i paesi</button>
+            </div>
+            <div class="cardcampagne-body">
+              <canvas id="rifiuti"></canvas>
+              <br>
+              <p class="fontechart">Chilogrammi di rifiuti prodotti annualmente pro-capite.</p>
+              <p class="fontechart">Fonte: <a
+                  href="https://ec.europa.eu/eurostat/databrowser/view/CEI_PC034/default/table?lang=en&category=env.env_was.env_wasgt"
+                  target="_blank">Eurostat</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-lg-7" style="padding-top: 2rem;">
+            <div class="cardcampagne">
+              <h4>Paesi europei con più rifiuti pro-capite</h4>
+              <div class="cardcampagne-body">
+                <canvas id="rifiutipie"></canvas>
+                <br>
+                <p class="fontechart">Chilogrammi di rifiuti prodotti annualmente pro-capite.</p>
+                <p class="fontechart">Fonte: <a
+                    href="https://ec.europa.eu/eurostat/databrowser/view/CEI_PC034/default/table?lang=en&category=env.env_was.env_wasgt"
+                    target="_blank">Eurostat</a></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
