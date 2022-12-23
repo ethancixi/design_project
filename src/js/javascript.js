@@ -180,3 +180,5 @@ function calcolavaloriny() {
     const datany = [valueNOx[0], valueAirTox[0], valueSO2[0]];
     return datany;
 }
+//2.0
+
