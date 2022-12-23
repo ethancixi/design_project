@@ -56,6 +56,10 @@ body {
   color: #e8c4c4;
 }
 
+.text-red {
+  color: #ce7777;
+}
+
 .text-highlighted-yellow {
   background-color: #FFDBA4;
 }
