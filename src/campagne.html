@@ -48,7 +48,7 @@
     <div class="row">
       <div class="column">
         <h1 class="text-black title-paragraph text-center">Campagne</h1>
-        <p class="text-black text-center">frase motivazionale?</p>
+        <p class="text-black text-center">Tutto ciò per cui ci spendiamo. Tutto il giorno, tutti i giorni.</p>
       </div>
     </div>
   </header>
@@ -56,23 +56,75 @@
   <section>
     <div class="container">
       <div class="row">
-        <div class="col col-lg-7 p-3">
-          <h1 class="text-white title-paragraph">
+        <div class="col col-lg-7">
+          <h1 class="text-white title-paragraph" style="margin-top: 2rem;">
             Ecco quello che facciamo:
           </h1>
-          <p class="text-white">guarda:</p>
-          <p>
+        </div>
+      </div>
+      <br>
+      <div class="row justify-content-center">
+        <div class="col-11">
+          <h2 class="text-white title-paragraph">1. Qualità dell'aria</h2>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col col-lg-7">
           <div class="cardcampagne">
-            <h4>Qualità dell'aria a New York</h4>
+            <h4>Misura della qualità dell'aria a New York</h4>
             <div class="buttonsdiv">
-              <button class="buttoncanvasselected" onclick="assigndata()" id="tuttibutton" disabled>Tutti</button>
-              <button class="buttoncanvas" onclick="mostranord()" id="nordbutton">Quartieri a Nord</button>
+              <button class="buttoncanvasselected" onclick="assigndatacanvas()" id="tuttibutton" disabled>Tutti</button>
+              <button class="buttoncanvas" onclick="mostranordcanvas()" id="nordbutton">Quartieri a Nord</button>
             </div>
             <div class="cardcampagne-body">
               <canvas id="canvas"></canvas>
+              <br><p class="fontechart">Fonte: <a href="https://data.cityofnewyork.us/resource/c3uy-2p5r.json" target="_blank">Città di New York</a></p>
             </div>
           </div>
+        </div>
+        <div class="col col-lg-5" style="padding: 2rem;">
+          <h3 class="text-yellow title-paragraph">Situazione attuale</h3><br>
+          <p class="text-white">La qualità dell'aria a New York è stata un <b>problema di lunga data</b>. La città è
+            nota per
+            la sua <b>alta densità di traffico</b> e il suo sistema di trasporto pubblico affollato, entrambi dei quali
+            contribuiscono alle emissioni di inquinanti atmosferici. <br><br>New York ha anche una grande quantità di
+            <b>edifici</b>
+            alti, che possono <b>impedire la circolazione dell'aria</b> e contribuire all'<b>accumulo di inquinanti</b>.
+            Nonostante
+            gli sforzi per migliorare la qualità dell'aria, come la promozione dei trasporti pubblici e l'adozione di
+            veicoli elettrici, la città continua a lottare per mantenere livelli di inquinamento accettabili.
+            <br><br>Tuttavia,
+            negli ultimi anni ci sono stati progressi significativi nella <b>riduzione delle emissioni di inquinanti</b>
+            atmosferici a New York, e la qualità dell'aria sta lentamente migliorando.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-lg-7" style="padding: 2rem;">
+          <h3 class="text-yellow title-paragraph">Cosa facciamo</h3><br>
+          <p class="text-white">
+            L'attivismo per l'aria pulita in città è un movimento globale che mira a <b>migliorare la qualità dell'aria che
+            respiriamo nelle nostre città</b>. Ci sono molti modi in cui le persone possono partecipare attivamente
+            all'attivismo per l'aria pulita, sia a livello individuale che collettivo.
+            <br><br>
+            A livello individuale, le persone possono <b>adottare stili di vita più sostenibili</b>, come utilizzare <b>trasporti
+            pubblici o veicoli elettrici</b> invece di quelli a benzina o diesel, o utilizzare <b>energie rinnovabili</b> per
+            riscaldare le proprie case. Inoltre, possono fare la loro parte per ridurre le emissioni di inquinanti
+            atmosferici promuovendo pratiche sostenibili nella propria vita quotidiana, come il <b>riciclaggio e il
+            compostaggio dei rifiuti</b>.
+            <br><br>
+            A livello collettivo, le persone possono partecipare a <b>manifestazioni e proteste</b> per sensibilizzare
+            l'opinione pubblica e le autorità sulla questione dell'inquinamento dell'aria.
           </p>
+        </div>
+        <div class="col col-lg-5">
+          <div class="cardcampagne">
+            <h4>Sostanze tossiche presenti nell'aria di New York City</h4>
+            <div class="cardcampagne-body">
+              <canvas id="piechart"></canvas>
+              <br><p class="fontechart">Fonte: <a href="https://data.cityofnewyork.us/resource/c3uy-2p5r.json" target="_blank">Città di New York</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

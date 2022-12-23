@@ -44,6 +44,26 @@ body {
   display: none;
 }
 
+.text-white b {
+  color: #FFDBA4;
+}
+
+.text-yellow {
+  color: #FFDBA4;
+}
+
+.text-pink {
+  color: #e8c4c4;
+}
+
+.text-highlighted-yellow {
+  background-color: #FFDBA4;
+}
+
+.text-highlighted-pink {
+  background-color: #e8c4c4;
+}
+
 .card-link {
   cursor: pointer;
 }
@@ -158,4 +178,17 @@ body {
 
 .card-bodycampagne canvas {
   margin: auto;
+}
+
+.fontechart {
+  font-size: 13px;
+  color: #9d9d9d;
+}
+
+.fontechart a {
+  color: #9d9d9d;
+}
+
+.fontechart a:hover {
+  color: #495579;
 }/*# sourceMappingURL=style.css.map */
