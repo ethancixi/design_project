@@ -392,6 +392,10 @@ function calcolatop5(){
     chartrifiutipie.data.labels = top5_paesi_waste;
     chartrifiutipie.data.datasets[0].data = top5_value_waste;
     chartrifiutipie.update();
+}
 
+//-----------------------------------------------------ARTICOLI-----------------------------------
+function linkinterno(nome){
+    window.location.href = "#"+nome;
 }
 

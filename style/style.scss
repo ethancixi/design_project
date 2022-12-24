@@ -181,3 +181,28 @@ body {
 .fontechart a:hover {
   color: $lightblue;
 }
+
+//ARTICOLI
+.indicearticoli{
+  margin-top: 1.4rem;
+  list-style-type: none;
+}
+.indicearticoli li .indice_titolo{
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+.indicearticoli li span{
+  margin-top: 1.4rem;
+  list-style-type: none;
+}
+.indicearticoli li:hover .indice_titolo{
+  margin-left: 1rem;
+  color: $pastelyellow;
+  cursor: pointer;
+}
+.indice_numero{
+  color: $pastelred;
+}
+.indice_titolo{
+  color: white;
+}
