@@ -12,5 +12,31 @@ $(document).ready(function () {
         }, 10000);
 
     });
-    //EVENTI.HTML
+    //INDEX.HTML
+    var giornosettimana=$("#dayweek").html();
+    controllagiornisettimana(giornosettimana);
+    
 });
+function controllagiornisettimana(giorno){
+    if(giorno=="Monday"){
+        $("#lun").addClass("giornoattuale");
+    }
+    else if(giorno=="Tuesday"){
+        $("#mar").addClass("giornoattuale");
+    }
+    else if(giorno == "Wednesday"){
+        $("#mer").addClass("giornoattuale");
+    }
+    else if(giorno == "Thursday"){
+        $("#gio").addClass("giornoattuale");
+    }
+    else if(giorno == "Friday"){
+        $("#ven").addClass("giornoattuale");
+    }
+    else if(giorno == "Saturday"){
+        $("#sab").addClass("giornoattuale");
+    }
+    else if(giorno == "Sunday"){
+        $("#dom").addClass("giornoattuale");
+    }
+}

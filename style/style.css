@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 body {
   background-color: #2b3a55;
   overflow-x: hidden;
@@ -12,7 +13,7 @@ body {
 }
 
 .title-paragraph {
-  font-family: "DM Serif Display", serif;
+  font-family: "DM Serif";
 }
 
 .hero {
@@ -66,6 +67,60 @@ body {
 
 .text-highlighted-pink {
   background-color: #e8c4c4;
+}
+
+.watch_card {
+  text-align: center;
+  color: white;
+  box-shadow: 2px 2px 4px 2px #000000;
+  border-radius: 24px;
+}
+
+.watch_card-body {
+  text-align: center;
+  color: white;
+  padding: 3rem;
+}
+
+.watch_card #day {
+  font-size: 40px;
+}
+
+.watch_card #dayweek {
+  font-size: 50px;
+  font-family: Prata;
+  color: #FFDBA4;
+}
+
+.watch_card #hour {
+  font-size: 50px;
+  font-family: Prata;
+}
+
+.calendar {
+  margin-top: -1rem;
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+.calendar span {
+  padding: 0.5rem;
+}
+
+.giornoattuale {
+  color: #FFDBA4;
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 10px;
+}
+
+.watch_card img {
+  width: 100%;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  margin-top: -14.5rem;
 }
 
 .card-link {
