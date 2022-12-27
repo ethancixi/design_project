@@ -12,7 +12,7 @@
   <title>weAct!</title>
 </head>
 
-<body>
+<body onload="cambiastilelista()">
   <nav class="navbar navbar-expand-lg bg-transparent position-fixed position-sticky pb-2">
     <div class="container-fluid">
       <a href="index.html" class="navbar-brand">
@@ -58,11 +58,11 @@
     </div>
   </header>
 
-  <section>
+  <section ng-app="myApp">
     <div class="container">
       <div class="row">
         <div class="col col-lg-5" style="margin-top: 2rem; margin-bottom: 2rem;">
-          <div ng-app="myApp" ng-controller="WatchCtrl">
+          <div ng-controller="WatchCtrl">
             <div class="watch_card">
               <div class="watch_card-body">
                 <p>
@@ -82,6 +82,18 @@
               </div>
               <img src="../assets/img/cardmaterial/mountainsnosun.png">
             </div>
+          </div>
+        </div>
+        <div class="col col-lg-7" style="margin-top: 2rem; margin-bottom: 2rem;">
+          <div class="watch_card" ng-controller="MoneyCtrl">
+            <div class="watch_card-body">
+              <p class="title-paragraph soldiraccolti">Risorse raccolte da weAct</p>
+              <p>-</p>
+              <ul>
+                <li class="mydata text-lightpink" ng-repeat="x in mydata"><span class="year">{{x.year}}</span> &sdot; <span class="money">{{x.money | currency}}</span></li>
+              </ul>
+            </div>
+            <img src="../assets/img/cardmaterial/mountains2.png">
           </div>
         </div>
       </div>
@@ -163,6 +175,7 @@
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="js/jquery.js"></script>
+  <script src="js/javascript.js"></script>
   <script>
     var app = angular.module("myApp", []);
     app.controller('WatchCtrl', function ($scope, $interval) {
@@ -173,6 +186,12 @@
         $scope.date = date;
       }, 1000);
     });
+    app.controller('MoneyCtrl', function ($scope, $http) {
+      $http.get("https://samuelepeirone.github.io/data_eurostat/weact_revenues.json").then(function(response){
+        $scope.mydata = response.data;
+      });
+    });
+
   </script>
 </body>
 

@@ -58,6 +58,9 @@ body {
 .text-pink{
   color: $pastelpink;
 }
+.text-lightpink{
+  color: $lightpastelpink;
+}
 .text-red{
   color: $pastelred;
 }
@@ -114,7 +117,30 @@ body {
   border-bottom-right-radius: 24px;
   margin-top: -14.5rem;
 }
-
+.mydata{
+  list-style-type: none;
+  font-size: 40px;
+}
+.year{
+  font-size: 25px;
+}
+.money{
+  font-size: 35px;
+  font-family: Prata;
+}
+.soldiraccolti{
+  font-size: 40px;
+  font-family: Prata;
+}
+.primarigasoldi{
+  color: $pastelyellow;
+}
+.primarigasoldi .year{
+  font-size: 35px;
+}
+.primarigasoldi .money{
+  font-size: 45px;
+}
 //EVENTI
 .card-link{
   cursor: pointer;
