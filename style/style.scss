@@ -23,7 +23,7 @@ body {
   max-height: 64px;
 }
 .title-paragraph {
-  font-family: "DM Serif";
+  font-family: "DM Serif", serif;
 }
 .hero {
   height: 80vh;
@@ -88,7 +88,7 @@ body {
 }
 .watch_card #dayweek{
   font-size: 50px;
-  font-family: Prata;
+  font-family: "Prata", serif;
   color: $pastelyellow;
 }
 .watch_card #hour{
@@ -115,7 +115,7 @@ body {
   width: 100%;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
-  margin-top: -14.5rem;
+  margin-top: -12.5rem;
 }
 .mydata{
   list-style-type: none;
@@ -126,11 +126,11 @@ body {
 }
 .money{
   font-size: 35px;
-  font-family: Prata;
+  font-family: "Prata", serif;
 }
 .soldiraccolti{
   font-size: 40px;
-  font-family: Prata;
+  font-family: "Prata", serif;
 }
 .primarigasoldi{
   color: $pastelyellow;
@@ -141,6 +141,52 @@ body {
 .primarigasoldi .money{
   font-size: 45px;
 }
+.carosello{
+  background-color: white;
+  border-radius: 24px;
+  text-align: center;
+}
+.carosello-body{
+  padding: 2rem;
+}
+.carosello-body button {
+  width: 13rem;
+  font-family: "Poppins", sans-serif;
+  padding-top: 0.594rem;
+  padding-bottom: 0.594rem;
+  padding-left: 1.194rem;
+  padding-right: 1.194rem;
+  background-color: #2b3a550d;
+  border: 1.5px solid $lightblue;
+  color: $lightblue;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.carosello-body button:hover {
+  color: $pastelred;
+  border: 1.5px solid $pastelred;
+  background-color: #ce77770c;
+}
+
+.carosello-body button:disabled{
+  color: $softgrey;
+  border: 1.5px solid $softgrey;
+  pointer-events: none;
+}
+
+#imgcarosello{
+  width: 100%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+#indicecarosello{
+  font-family: "Prata", serif;
+}
+#avanti{
+  margin-left: 0.5rem;
+}
+
 //EVENTI
 .card-link{
   cursor: pointer;
@@ -210,7 +256,7 @@ body {
 
 .buttoncanvas {
   width: 13rem;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   padding-top: 0.594rem;
   padding-bottom: 0.594rem;
   padding-left: 1.194rem;
@@ -227,7 +273,7 @@ body {
 
 .buttoncanvasselected {
   width: 13rem;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
   padding-left: 1.2rem;
@@ -239,7 +285,7 @@ body {
 }
 
 .cardcampagne-body {
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
@@ -258,26 +304,16 @@ body {
 }
 
 //ARTICOLI
-.indicearticoli{
-  margin-top: 1.4rem;
-  list-style-type: none;
+
+.author-paragraph{
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
-.indicearticoli li .indice_titolo{
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
+.author-paragraph img{
+  width: 3rem;
 }
-.indicearticoli li span{
-  margin-top: 1.4rem;
-  list-style-type: none;
-}
-.indicearticoli li:hover .indice_titolo{
-  margin-left: 1rem;
-  color: $pastelyellow;
-  cursor: pointer;
-}
-.indice_numero{
-  color: $pastelred;
-}
-.indice_titolo{
-  color: white;
+.author-paragraph span{
+  font-size: large;
+  margin-left: 0.5rem;
 }

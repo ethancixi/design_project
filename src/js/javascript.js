@@ -393,12 +393,6 @@ function calcolatop5(){
     chartrifiutipie.data.datasets[0].data = top5_value_waste;
     chartrifiutipie.update();
 }
-
-//-----------------------------------------------------ARTICOLI-----------------------------------
-function linkinterno(nome){
-    window.location.href = "#"+nome;
-}
-
 //-----------------------------------------------------INDEX-----------------------------------
 function cambiastilelista(){
     document.getElementsByClassName("mydata")[0].classList.add("primarigasoldi");
