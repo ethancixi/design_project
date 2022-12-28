@@ -47,10 +47,10 @@
     style="background-image: url(../assets/img/eventi.jpg)">
     <div class="row">
       <div class="column">
-          <h1 class="text-white title-paragraph text-center">Eventi</h1>
-          <p class="text-white text-center">
-            La tua occasione per cambiare il mondo davvero
-          </p>
+        <h1 class="text-white title-paragraph text-center">Eventi</h1>
+        <p class="text-white text-center">
+          La tua occasione per cambiare il mondo davvero
+        </p>
       </div>
     </div>
   </header>
@@ -69,7 +69,7 @@
           <div class="card" style="width: 18rem;" ng-Controller="evento1Ctrl">
             <img class="card-img-top" src="../assets/img/eventi_cards/zaino.jpg" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Evento1</h5>
+              <h5 class="card-title">Assemblea dei soci weAct</h5>
               <p class="card-text">
               <div class="div-copy" ng-click="ShowHide()">
                 {{divcopydescr}}
@@ -77,8 +77,10 @@
               </div>
               <div ng-show="mostra" class="mostra">
                 <br>
-                <p>Esempio di copy!! scrivi scrivi descrivi l'evento, blablablabla dahsiusihsba suidsabid dbdh hfh ee e
-                  e e eeb dhbdajajs sba</p>
+                <p>L'assemblea dei soci è un importante momento di incontro e di confronto per tutti i membri
+                  dell'associazione. Durante l'assemblea, verranno discusse e prese decisioni su argomenti di rilievo
+                  per l'associazione, come il bilancio, le attività svolte e i progetti futuri.
+                </p>
               </div>
               </p>
             </div>
@@ -87,7 +89,7 @@
                 <i class="bi-alarm"></i> 15:30 - 18:00
               </li>
               <li class="list-group-item">
-                <i class="bi bi-calendar-date"></i> 18 settembre 2022
+                <i class="bi bi-calendar-date"></i> 18 gennaio 2022
               </li>
               <li class="list-group-item">
                 <i class="bi bi-geo-alt"></i> Torino, Italia
@@ -103,7 +105,7 @@
           <div class="card" style="width: 18rem;" ng-Controller="evento2Ctrl">
             <img class="card-img-top" src="../assets/img/eventi_cards/speech.jpg" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Evento2</h5>
+              <h5 class="card-title">Dibattito su temi ambientali</h5>
               <p class="card-text">
               <div class="div-copy" ng-click="ShowHide()">
                 {{divcopydescr}}
@@ -111,8 +113,10 @@
               </div>
               <div ng-show="mostra" class="mostra">
                 <br>
-                <p> Secondo Esempio di copy!! scrivi scrivi descrivi l'evento di nuovo, blablablabla dahsiusihsba
-                  suidsabid dbdh hfh ee e e e eeb dhbdajajs sba</p>
+                <p>Il dibattito sarà moderato da un giornalista del settore e verterà su argomenti come il cambiamento
+                  climatico, la gestione dei rifiuti, la conservazione della biodiversità e altri temi di attualità. Ci
+                  sarà spazio anche per le domande del pubblico, quindi non esitate a portare con voi tutte le vostre
+                  domande e curiosità.</p>
               </div>
               </p>
             </div>
@@ -121,7 +125,7 @@
                 <i class="bi-alarm"></i> 15:30 - 18:00
               </li>
               <li class="list-group-item">
-                <i class="bi bi-calendar-date"></i> 18 settembre 2022
+                <i class="bi bi-calendar-date"></i> 23 febbraio 2022
               </li>
               <li class="list-group-item">
                 <i class="bi bi-geo-alt"></i> Torino, Italia
@@ -132,6 +136,40 @@
               <a class="card-link" ng-click="iscriviti()"
                 ng-class="{'card-link': !iscritto, 'card-link-iscritto': iscritto}">{{iscrittostringa}}</a>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-12">
+          <div class="footer-body">
+            <h1 class="text-white title-paragraph"><a href="index.html">weAct</a></h1>
+            <p class="text-white">data-driven activism</p>
+            <p class="text-blue">-</p>
+            <div class="footernav">
+              <ul>
+                <li>
+                  <a href="campagne.html">Campagne</a>
+                </li>
+                <li>
+                  <a href="eventi.html">Eventi</a>
+                </li>
+                <li>
+                  <a href="registrazione.html">Registrazione</a>
+                </li>
+                <li>
+                  <a href="articoli.html">Articoli</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+              </ul>
+            </div>
+            <p class="text-blue">-</p>
+            <p class="text-lightpink">Copyright ©2022 All rights reserved</p>
           </div>
         </div>
       </div>

@@ -64,6 +64,9 @@ body {
 .text-red{
   color: $pastelred;
 }
+.text-blue{
+  color: $navyblue;
+}
 .text-highlighted-yellow{
   background-color: $pastelyellow;
 }
@@ -316,4 +319,53 @@ body {
 .author-paragraph span{
   font-size: large;
   margin-left: 0.5rem;
+}
+.image-box{
+  background-color: white;
+  border-radius: 24px;
+  text-align: center;
+}
+.image-box img{
+  width: 100%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.image-box p{
+  padding: 2rem;
+}
+//ABOUT
+.footer-section{
+  text-align: center;
+  background-color: $pastelpink;
+  margin-top: 5rem;
+}
+.footer-body{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.footer-body h1 a{
+  color: white;
+  text-decoration: none;
+}
+.footer-body h1 a:hover{
+  color: $lightblue;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+.footernav ul li a{
+  text-decoration: none;
+  color: $lightblue;
+  padding: 1rem;
+}
+.footernav ul{
+  list-style: none;
+}
+.footernav ul li{
+  display: inline;
+}
+.footernav ul li a:hover{
+  font-weight: 500;
+  color: $lightblue;
+  text-decoration: underline;
 }

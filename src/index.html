@@ -12,7 +12,7 @@
   <title>weAct!</title>
 </head>
 
-<body onload="cambiastilelista()">
+<body>
   <nav class="navbar navbar-expand-lg bg-transparent position-fixed position-sticky pb-2">
     <div class="container-fluid">
       <a href="index.html" class="navbar-brand">
@@ -44,7 +44,6 @@
       </div>
     </div>
   </nav>
-
   <header class="hero d-flex justify-content-center align-items-center">
     <div class="row">
       <div class="column">
@@ -85,7 +84,7 @@
           </div>
         </div>
         <div class="col col-lg-7" style="margin-top: 2rem; margin-bottom: 2rem;">
-          <div class="watch_card" ng-controller="MoneyCtrl">
+          <div class="watch_card" ng-controller="MoneyCtrl" onmouseover="cambiastilelista()">
             <div class="watch_card-body">
               <p class="title-paragraph soldiraccolti">Risorse raccolte da weAct</p>
               <p>-</p>
@@ -137,12 +136,45 @@
       </div>
     </div>
   </section>
+  <section class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-12">
+          <div class="footer-body">
+            <h1 class="text-white title-paragraph"><a href="index.html">weAct</a></h1>
+            <p class="text-white">data-driven activism</p>
+            <p class="text-blue">-</p>
+            <div class="footernav">
+              <ul>
+                <li>
+                  <a href="campagne.html">Campagne</a>
+                </li>
+                <li>
+                  <a href="eventi.html">Eventi</a>
+                </li>
+                <li>
+                  <a href="registrazione.html">Registrazione</a>
+                </li>
+                <li>
+                  <a href="articoli.html">Articoli</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+              </ul>
+            </div>
+            <p class="text-blue">-</p>
+            <p class="text-lightpink">Copyright ©2022 All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/javascript.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="js/jquery.js"></script>
-  <script src="js/javascript.js"></script>
   <script>
     var app = angular.module("myApp", []);
     app.controller('WatchCtrl', function ($scope, $interval) {

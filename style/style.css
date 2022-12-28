@@ -65,6 +65,10 @@ body {
   color: #ce7777;
 }
 
+.text-blue {
+  color: #2b3a55;
+}
+
 .text-highlighted-yellow {
   background-color: #FFDBA4;
 }
@@ -350,4 +354,63 @@ body {
 .author-paragraph span {
   font-size: large;
   margin-left: 0.5rem;
+}
+
+.image-box {
+  background-color: white;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.image-box img {
+  width: 100%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.image-box p {
+  padding: 2rem;
+}
+
+.footer-section {
+  text-align: center;
+  background-color: #e8c4c4;
+  margin-top: 5rem;
+}
+
+.footer-body {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-body h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-body h1 a:hover {
+  color: #495579;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.footernav ul li a {
+  text-decoration: none;
+  color: #495579;
+  padding: 1rem;
+}
+
+.footernav ul {
+  list-style: none;
+}
+
+.footernav ul li {
+  display: inline;
+}
+
+.footernav ul li a:hover {
+  font-weight: 500;
+  color: #495579;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
