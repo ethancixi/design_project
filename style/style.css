@@ -208,10 +208,6 @@ body {
   font-family: "Prata", serif;
 }
 
-#avanti {
-  margin-left: 0.5rem;
-}
-
 .card-link {
   cursor: pointer;
 }
@@ -413,4 +409,52 @@ body {
   font-weight: 500;
   color: #495579;
   text-decoration: underline;
+}
+
+.about_link {
+  text-align: center;
+  background-color: #FFDBA4;
+  border-radius: 24px;
+}
+
+#mappa iframe {
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  margin-bottom: -0.45rem;
+}
+
+.about_link-body {
+  padding: 3rem;
+}
+
+.about_link-body h2 {
+  margin-bottom: 3rem;
+}
+
+.about_link-body ul {
+  list-style: none;
+  margin-right: 1.3rem;
+  margin-bottom: 3rem;
+}
+
+.about_link-body ul li {
+  margin-bottom: 2.5rem;
+  display: inline;
+  margin-right: 0.3rem;
+}
+
+.about_link-body ul li a {
+  border: 1px solid #ce7777;
+  padding-top: 0.9rem;
+  padding-bottom: 1.1rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  border-radius: 40px;
+  color: #ce7777;
+  text-decoration: none;
+}
+
+.about_link-body ul li a:hover {
+  background-color: #ce7777;
+  color: #FFDBA4;
 }/*# sourceMappingURL=style.css.map */

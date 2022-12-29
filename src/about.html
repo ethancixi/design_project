@@ -54,9 +54,50 @@
   </header>
   <section>
     <div class="container">
-      <div class="row">
-        <div class="col col-lg-4">
-          <h1 class="title-paragraph text-white">Inventati qualcosa uomo</h1>
+      <div class="row justify-content-center">
+        <div class="col col-lg-6" style="padding-top: 2rem;">
+          <h1 class="title-paragraph text-white">Chi siamo</h1>
+          <p class="text-white">Siamo una community di attivisti appassionati che lavorano per promuovere cause
+            importanti e fare la differenza nella nostra società.
+            <br><br>
+            Il nostro obiettivo è quello di creare una piattaforma dove chiunque, indipendentemente dalle proprie
+            credenze politiche o dal proprio background, possa unirsi a noi per fare la differenza. Siamo convinti che,
+            insieme, possiamo fare una grande differenza e cambiare il mondo in meglio.
+            <br><br>
+            Abbiamo una lunga storia di attivismo e di lotta per i diritti umani, l'uguaglianza e la giustizia. Siamo
+            sempre alla ricerca di nuove opportunità per ampliare la nostra portata e raggiungere un pubblico sempre più
+            ampio.
+          </p>
+          <div class="image-box">
+            <img src="../assets/img/aboutus/img1.jpg">
+            <p>"La natura non ha bisogno di noi, ma noi abbiamo bisogno della natura." - David Attenborough</p>
+          </div>
+          <hr class="text-white">
+          <div class="about_link">
+            <div class="about_link-body">
+              <h2 class="text-red">Link utili</h2>
+              <ul>
+                <li><a href="mailto:info@weact.com" onmouseleave="linkselezionato('')"
+                    onmouseover="linkselezionato('scrivici via <b>email</b>')"><i class="bi bi-envelope"></i></a></li>
+                <li><a href="https://www.instagram.com/patagonia/" target="_blank" onmouseleave="linkselezionato('')"
+                    onmouseover="linkselezionato('seguici su <b>instagram</b>')"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li><a href="https://youtu.be/iRD97zO-7d0" target="_blank" onmouseleave="linkselezionato('')"
+                    onmouseover="linkselezionato('guarda il nostro ultimo video su <b>youtube</b>')"><i
+                      class="bi bi-youtube"></i></a></li>
+                <li><a href="#linkparagrafo" onclick="mostramappa()" onmouseleave="linkselezionato('')"
+                    onmouseover="linkselezionato('<b>raggiungici</b> ai nostri headquarters')"><i
+                      class="bi bi-geo-alt-fill"></i></a></li>
+              </ul>
+              <p class="text-red" id="linkparagrafo">--</p>
+            </div>
+            <div id="mappa" style="display: none;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2776.305131362207!2d6.104489115817341!3d45.905208911928376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b8f013f012b0b%3A0xa18174d96910cab3!2sPatagonia%20Europe!5e0!3m2!1sit!2sit!4v1672317410508!5m2!1sit!2sit"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -98,6 +139,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
+  <script src="js/javascript.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="js/jquery.js"></script>
 </body>
 
 </html>

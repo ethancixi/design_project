@@ -397,3 +397,12 @@ function calcolatop5(){
 function cambiastilelista(){
     document.getElementsByClassName("mydata")[0].classList.add("primarigasoldi");
 }
+//----------------------------------------------ABOUTUS------------------------------
+function linkselezionato(nome){
+    if(nome==""){
+        document.getElementById("linkparagrafo").innerHTML="--";
+    }
+    else{
+        document.getElementById("linkparagrafo").innerHTML=nome;
+    }
+}

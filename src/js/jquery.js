@@ -78,3 +78,6 @@ function caroselloimmagini() {
         $("#indicecarosello").html((posizione+1)+"/"+arraysources.length);
     })
 }
+function mostramappa(){
+    $("#mappa").toggle(400);
+}
