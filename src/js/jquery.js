@@ -78,6 +78,7 @@ function caroselloimmagini() {
         $("#indicecarosello").html((posizione+1)+"/"+arraysources.length);
     })
 }
+//ABOUTUS
 function mostramappa(){
     $("#mappa").toggle(400);
 }
