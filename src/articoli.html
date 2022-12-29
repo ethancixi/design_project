@@ -12,10 +12,10 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-transparent position-fixed position-sticky pb-2">
+  <nav class="navbar navbar-expand-lg bg-transparent position-fixed position-sticky pb-2" role="navigation">
     <div class="container-fluid">
       <a href="index.html" class="navbar-brand">
-        <h1 class="text-white title-paragraph">weAct</h1>
+        <span class="title-paragraph text-white weact-logo">weAct</span>
       </a>
       <button class="navbar-toggler btn-close-white" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -23,21 +23,21 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-top: 0.5rem;">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="campagne.html">Campagne</a>
+            <a class="nav-link active text-white" href="campagne.html">Campagne</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="eventi.html">Eventi</a>
+            <a class="nav-link active text-white" href="eventi.html">Eventi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="registrazione.html">Registrazione</a>
+            <a class="nav-link active text-white" href="registrazione.html">Registrazione</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active text-white" aria-current="page" href="articoli.html">Articoli</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="about.html">About</a>
+            <a class="nav-link active text-white" href="about.html">About</a>
           </li>
         </ul>
       </div>
@@ -47,8 +47,8 @@
     style="background-image: url(../assets/img/articoli.jpg)">
     <div class="row">
       <div class="column">
-        <h1 class="text-white title-paragraph text-center">Articoli</h1>
-        <p class="text-white text-center">Ora ti raccontiamo una storia</p>
+        <h1 class="text-white title-paragraph text-center text-highlighted-pink">Articoli</h1>
+        <p class="text-white text-center text-highlighted-pink">Ora ti raccontiamo una storia</p>
       </div>
     </div>
   </header>
@@ -67,7 +67,7 @@
         <div class="col col-lg-12">
           <h2 class="title-paragraph text-white">L'energia rinnovabile: una scelta sostenibile per il futuro</h2>
           <div class="author-paragraph text-white">
-            <img src="../assets/img/articoli/author.png">
+            <img src="../assets/img/articoli/author.png" alt="">
             <span>Carlo Ferrari &sdot; 30/01/2022</span>
           </div>
         </div>
@@ -107,7 +107,7 @@
         </div>
         <div class="col col-lg-5">
           <div class="image-box">
-            <img src="../assets/img/articoli/img_articoli/img1.jpg">
+            <img src="../assets/img/articoli/img_articoli/img1.jpg" alt="Immagine di un'area molto vasta coperta da pannelli solari. In lontananza si notano delle catene montuose.">
             <p>Molti paesi stanno investendo in questa
               tecnologia e stanno adottando obiettivi ambiziosi per aumentare la quota di energia rinnovabile nella loro
               produzione di energia.</p>
@@ -122,7 +122,7 @@
               fare
             </h2>
             <div class="author-paragraph text-white">
-              <img src="../assets/img/articoli/author.png">
+              <img src="../assets/img/articoli/author.png" alt="">
               <span>Giovanni Bianchi &sdot; 20/08/2022</span>
             </div>
           </div>
@@ -131,7 +131,7 @@
         <div class="row">
           <div class="col col-lg-5">
             <div class="image-box">
-              <img src="../assets/img/articoli/img_articoli/img2.jpg">
+              <img src="../assets/img/articoli/img_articoli/img2.jpg" alt="Tre pescatori gettano dalle proprie piccole imbarcazioni le proprio reti; ognuna in una direzione diversa.">
               <p>E' importante promuovere la consapevolezza sulla sostenibilità della pesca attraverso l'educazione
                 e la sensibilizzazione delle persone. Maggiore è la consapevolezza dei consumatori sull'impatto della
                 pesca sull'ambiente, maggiore sarà la pressione per promuovere pratiche di pesca sostenibili.</p>
@@ -183,7 +183,7 @@
             <div class="col col-lg-12">
               <h2 class="title-paragraph text-white">L'energia geotermica: una fonte di energia rinnovabile e pulita</h2>
               <div class="author-paragraph text-white">
-                <img src="../assets/img/articoli/author.png">
+                <img src="../assets/img/articoli/author.png" alt="">
                 <span>Lorenzo Giordano &sdot; 04/01/2023</span>
               </div>
             </div>
@@ -223,7 +223,7 @@
             </div>
             <div class="col col-lg-5">
               <div class="image-box">
-                <img src="../assets/img/articoli/img_articoli/img3.jpg">
+                <img src="../assets/img/articoli/img_articoli/img3.jpg" alt="Fotografia che illustra il vapore emanato nell'aria da un lago vulcanico">
                 <p>L'energia geotermica è anche una fonte di energia stabile e
                   affidabile, poiché il calore della Terra è presente in modo costante e può essere utilizzato in
                   qualsiasi momento.</p>
@@ -232,13 +232,13 @@
           </div>
     </div>
   </section>
-  <section class="footer-section">
+  <footer>
     <div class="container">
       <div class="row">
         <div class="col col-lg-12">
-          <div class="footer-body">
-            <h1 class="text-white title-paragraph"><a href="index.html">weAct</a></h1>
-            <p class="text-white">data-driven activism</p>
+          <div class="footer-body" role="navigation">
+            <a href="index.html"><span class="title-paragraph text-blue weact-logo">weAct</span></a>
+            <p class="text-blue">data-driven activism</p>
             <p class="text-blue">-</p>
             <div class="footernav">
               <ul>
@@ -265,7 +265,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>

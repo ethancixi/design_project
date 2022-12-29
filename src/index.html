@@ -15,8 +15,8 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-transparent position-fixed position-sticky pb-2">
     <div class="container-fluid">
-      <a href="index.html" class="navbar-brand">
-        <h1 class="text-white title-paragraph">weAct</h1>
+      <a href="index.html" class="navbar-brand" aria-current="page">
+        <span class="title-paragraph text-white weact-logo">weAct</span>
       </a>
       <button class="navbar-toggler btn-close-white" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -24,21 +24,21 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-top: 0.5rem;">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="campagne.html">Campagne</a>
+            <a class="nav-link active text-white" href="campagne.html">Campagne</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="eventi.html">Eventi</a>
+            <a class="nav-link active text-white" href="eventi.html">Eventi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="registrazione.html">Registrazione</a>
+            <a class="nav-link active text-white" href="registrazione.html">Registrazione</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="articoli.html">Articoli</a>
+            <a class="nav-link active text-white" href="articoli.html">Articoli</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="about.html">About</a>
+            <a class="nav-link active text-white" href="about.html">About</a>
           </li>
         </ul>
       </div>
@@ -47,11 +47,11 @@
   <header class="hero d-flex justify-content-center align-items-center">
     <div class="row">
       <div class="column">
-        <h1 class="text-black title-paragraph text-center">
+        <h1 class="text-black title-paragraph text-center text-highlighted-yellow">
           weAct
         </h1>
-        <p class="text-black text-center">
-          data-driven activism
+        <p class="text-black text-center text-highlighted-yellow">
+          data-driven activism for the planet
         </p>
       </div>
     </div>
@@ -61,7 +61,7 @@
     <div class="container">
       <div class="row">
         <div class="col col-lg-5" style="margin-top: 2rem; margin-bottom: 2rem;">
-          <div ng-controller="WatchCtrl">
+          <div ng-controller="WatchCtrl" aria-live="off">
             <div class="watch_card">
               <div class="watch_card-body">
                 <p>
@@ -79,14 +79,14 @@
                   {{date | date:"HH:mm:ss"}}
                 </p>
               </div>
-              <img src="../assets/img/cardmaterial/mountainsnosun.png">
+              <img src="../assets/img/cardmaterial/mountainsnosun.png" alt="">
             </div>
           </div>
         </div>
         <div class="col col-lg-7" style="margin-top: 2rem; margin-bottom: 2rem;">
           <div class="watch_card" ng-controller="MoneyCtrl" onmouseover="cambiastilelista()">
             <div class="watch_card-body">
-              <p class="title-paragraph soldiraccolti">Risorse raccolte da weAct</p>
+              <h1 class="title-paragraph soldiraccolti">Risorse raccolte da weAct</h1>
               <p>-</p>
               <ul>
                 <li class="mydata text-lightpink" ng-repeat="x in mydata"><span class="year">{{x.year}}</span> &sdot;
@@ -94,7 +94,7 @@
                 </li>
               </ul>
             </div>
-            <img src="../assets/img/cardmaterial/mountains2.png">
+            <img src="../assets/img/cardmaterial/mountains2.png" alt="">
           </div>
         </div>
       </div>
@@ -106,7 +106,7 @@
       <div class="row">
         <div class="col col-lg-6">
           <div class="carosello">
-            <img id="imgcarosello" src="">
+            <img id="imgcarosello" src="" alt="carosello">
             <div class="carosello-body">
               <p id="indicecarosello"></p>
               <p id="pcarosello" class="text-black"></p>
@@ -116,7 +116,7 @@
           </div>
         </div>
         <div class="col col-12 col-lg-5 p-3">
-          <h1 class="text-white title-paragraph">Data-driven activism for the planet</h1>
+          <h2 class="text-white title-paragraph">Data-driven activism for the planet</h2>
           <p class="text-white">
             Una forma di attivismo guidata dai dati è quella che si basa sull'<b>utilizzo di dati e informazioni
               scientifiche per sostenere le proprie richieste e le proprie campagne</b>.<br><br> In questo modo, gli
@@ -136,13 +136,13 @@
       </div>
     </div>
   </section>
-  <section class="footer-section">
+  <footer>
     <div class="container">
       <div class="row">
         <div class="col col-lg-12">
           <div class="footer-body">
-            <h1 class="text-white title-paragraph"><a href="index.html">weAct</a></h1>
-            <p class="text-white">data-driven activism</p>
+            <a href="index.html"><span class="title-paragraph text-blue weact-logo">weAct</span></a>
+            <p class="text-blue">data-driven activism</p>
             <p class="text-blue">-</p>
             <div class="footernav">
               <ul>
@@ -169,7 +169,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </footer>
   <script src="js/javascript.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"

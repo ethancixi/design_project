@@ -12,29 +12,29 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-transparent position-fixed position-sticky pb-2">
+  <nav class="navbar navbar-expand-lg bg-transparent position-fixed position-sticky pb-2" role="navigation">
     <div class="container-fluid">
       <a href="index.html" class="navbar-brand">
-        <h1 class="text-white title-paragraph">weAct</h1>
+        <span class="title-paragraph text-white weact-logo">weAct</span>
       </a>
       <button class="navbar-toggler btn-close-white" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <p class="navbar-toggler-icon"></p>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-top: 0.5rem;">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="campagne.html">Campagne</a>
+            <a class="nav-link active text-white" href="campagne.html">Campagne</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="eventi.html">Eventi</a>
+            <a class="nav-link active text-white" href="eventi.html">Eventi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="registrazione.html">Registrazione</a>
+            <a class="nav-link active text-white" href="registrazione.html">Registrazione</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="articoli.html">Articoli</a>
+            <a class="nav-link active text-white" href="articoli.html">Articoli</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active text-white" aria-current="page" href="about.html">About</a>
@@ -47,8 +47,8 @@
     style="background-image: url(../assets/img/about.jpg)">
     <div class="row">
       <div class="column">
-        <h1 class="text-black title-paragraph text-center">w/About</h1>
-        <p class="text-black text-center">questi siamo noi</p>
+        <h1 class="text-black title-paragraph text-center text-highlighted-yellow">w/About</h1>
+        <p class="text-black text-center text-highlighted-yellow">questi siamo noi</p>
       </div>
     </div>
   </header>
@@ -69,27 +69,27 @@
             ampio.
           </p>
           <div class="image-box">
-            <img src="../assets/img/aboutus/img1.jpg">
+            <img src="../assets/img/aboutus/img1.jpg" alt="Immagine del monte Fuji scattata dal villaggio a valle. Sulla destra si nota un tempio tipico giapponese.">
             <p>"La natura non ha bisogno di noi, ma noi abbiamo bisogno della natura." - David Attenborough</p>
           </div>
           <hr class="text-white">
           <div class="about_link">
             <div class="about_link-body">
-              <h2 class="text-red">Link utili</h2>
+              <h2 class="text-blue">Link utili</h2>
               <ul>
                 <li><a href="mailto:info@weact.com" onmouseleave="linkselezionato('')"
-                    onmouseover="linkselezionato('scrivici via <b>email</b>')"><i class="bi bi-envelope"></i></a></li>
+                    onmouseover="linkselezionato('scrivici via <b>email</b>')"><i class="bi bi-envelope" role="link"></i></a></li>
                 <li><a href="https://www.instagram.com/patagonia/" target="_blank" onmouseleave="linkselezionato('')"
-                    onmouseover="linkselezionato('seguici su <b>instagram</b>')"><i class="bi bi-instagram"></i></a>
+                    onmouseover="linkselezionato('seguici su <b>instagram</b>')"><i class="bi bi-instagram" role="link"></i></a>
                 </li>
                 <li><a href="https://youtu.be/iRD97zO-7d0" target="_blank" onmouseleave="linkselezionato('')"
                     onmouseover="linkselezionato('guarda il nostro ultimo video su <b>youtube</b>')"><i
-                      class="bi bi-youtube"></i></a></li>
-                <li><a href="#linkparagrafo" onclick="mostramappa()" onmouseleave="linkselezionato('')"
+                      class="bi bi-youtube" role="link"></i></a></li>
+                <li><button onclick="mostramappa()" onmouseleave="linkselezionato('')"
                     onmouseover="linkselezionato('<b>raggiungici</b> ai nostri headquarters')"><i
-                      class="bi bi-geo-alt-fill"></i></a></li>
+                      class="bi bi-geo-alt-fill" role="button"></i></button></li>
               </ul>
-              <p class="text-red" id="linkparagrafo">--</p>
+              <p class="text-blue" id="linkparagrafo" aria-live="polite">--</p>
             </div>
             <div id="mappa" style="display: none;">
               <iframe
@@ -102,13 +102,13 @@
       </div>
     </div>
   </section>
-  <section class="footer-section">
+  <footer>
     <div class="container">
       <div class="row">
         <div class="col col-lg-12">
-          <div class="footer-body">
-            <h1 class="text-white title-paragraph"><a href="index.html">weAct</a></h1>
-            <p class="text-white">data-driven activism</p>
+          <div class="footer-body" role="navigation">
+            <a href="index.html"><span class="title-paragraph text-blue weact-logo">weAct</span></a>
+            <p class="text-blue">data-driven activism</p>
             <p class="text-blue">-</p>
             <div class="footernav">
               <ul>
@@ -135,7 +135,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>

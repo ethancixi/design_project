@@ -12,10 +12,10 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-transparent position-fixed position-sticky pb-2">
+  <nav class="navbar navbar-expand-lg bg-transparent position-fixed position-sticky pb-2" role="navigation">
     <div class="container-fluid">
       <a href="index.html" class="navbar-brand">
-        <h1 class="text-white title-paragraph">weAct</h1>
+        <span class="title-paragraph text-white weact-logo">weAct</span>
       </a>
       <button class="navbar-toggler btn-close-white" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -23,21 +23,21 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-top: 0.5rem;">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="campagne.html">Campagne</a>
+            <a class="nav-link active text-white" href="campagne.html">Campagne</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active text-white" aria-current="page" href="eventi.html">Eventi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="registrazione.html">Registrazione</a>
+            <a class="nav-link active text-white" href="registrazione.html">Registrazione</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="articoli.html">Articoli</a>
+            <a class="nav-link active text-white" href="articoli.html">Articoli</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="about.html">About</a>
+            <a class="nav-link active text-white" href="about.html">About</a>
           </li>
         </ul>
       </div>
@@ -47,8 +47,8 @@
     style="background-image: url(../assets/img/eventi.jpg)">
     <div class="row">
       <div class="column">
-        <h1 class="text-white title-paragraph text-center">Eventi</h1>
-        <p class="text-white text-center">
+        <h1 class="text-white title-paragraph text-center text-highlighted-red">Eventi</h1>
+        <p class="text-white text-center text-highlighted-red">
           La tua occasione per cambiare il mondo davvero
         </p>
       </div>
@@ -58,18 +58,18 @@
     <div class="container">
       <div class="row">
         <div class="col col-lg-8 p-3">
-          <h1 class="text-white title-paragraph">
+          <h2 class="text-white title-paragraph">
             Ecco gli eventi in programma:
-          </h1>
+          </h2>
           <p class="text-white">Iscriviti, riceverai aggiornamenti e news via mail!</p>
         </div>
         <div class="row">
           <!--CARDS -->
           <!--CARD 1 -->
           <div class="card" style="width: 18rem;" ng-Controller="evento1Ctrl">
-            <img class="card-img-top" src="../assets/img/eventi_cards/zaino.jpg" alt="Card image cap">
+            <img class="card-img-top" src="../assets/img/eventi_cards/zaino.jpg" alt="">
             <div class="card-body">
-              <h5 class="card-title">Assemblea dei soci weAct</h5>
+              <h3 class="card-title">Assemblea dei soci weAct</h3>
               <p class="card-text">
               <div class="div-copy" ng-click="ShowHide()">
                 {{divcopydescr}}
@@ -85,7 +85,7 @@
               <div ng-mouseover="iscrittivisibile=true" ng-mouseLeave="iscrittivisibile=false">
                 <br>
                 <i ng-class="{'bi bi-eye-fill': iscrittivisibile, 'bi bi-eye-slash-fill': !iscrittivisibile}"></i>
-                <span ng-if="!iscrittivisibile">-- iscritti</span><span ng-if="iscrittivisibile">54 iscritti</span>
+                <span ng-if="!iscrittivisibile">-- iscritti</span><span ng-if="iscrittivisibile"><b>54</b> iscritti</span>
               </div>
             </div>
             <ul class="list-group list-group-flush">
@@ -100,16 +100,17 @@
               </li>
             </ul>
             <div class="card-body" style="text-align: center">
-              <i ng-class="{'bi bi-bookmark-check-fill': iscritto, 'bi bi-bookmark': !iscritto}"></i>
-              <a class="card-link" ng-click="iscriviti()"
-                ng-class="{'card-link': !iscritto, 'card-link-iscritto': iscritto}">{{iscrittostringa}}</a>
+              <div ng-class="{'iscriviticlass': !iscritto, 'iscrittoclass': iscritto}">
+                <i ng-class="{'bi bi-bookmark-check-fill': iscritto, 'bi bi-bookmark': !iscritto}"></i>
+                <button ng-click="iscriviti()">{{iscrittostringa}}</button>
+              </div>
             </div>
           </div>
           <!--CARD 2 -->
           <div class="card" style="width: 18rem;" ng-Controller="evento2Ctrl">
-            <img class="card-img-top" src="../assets/img/eventi_cards/speech.jpg" alt="Card image cap">
+            <img class="card-img-top" src="../assets/img/eventi_cards/speech.jpg">
             <div class="card-body">
-              <h5 class="card-title">Dibattito su temi ambientali</h5>
+              <h3 class="card-title">Dibattito su temi ambientali</h3>
               <p class="card-text">
               <div class="div-copy" ng-click="ShowHide()">
                 {{divcopydescr}}
@@ -125,7 +126,7 @@
               <div ng-mouseover="iscrittivisibile=true" ng-mouseLeave="iscrittivisibile=false">
                 <br>
                 <i ng-class="{'bi bi-eye-fill': iscrittivisibile, 'bi bi-eye-slash-fill': !iscrittivisibile}"></i>
-                <span ng-if="!iscrittivisibile">-- iscritti</span><span ng-if="iscrittivisibile">103 iscritti</span>
+                <span ng-if="!iscrittivisibile">-- iscritti</span><span ng-if="iscrittivisibile"><b>103</b> iscritti</span>
               </div>
             </div>
             <ul class="list-group list-group-flush">
@@ -140,22 +141,23 @@
               </li>
             </ul>
             <div class="card-body" style="text-align: center">
-              <i ng-class="{'bi bi-bookmark-check-fill': iscritto, 'bi bi-bookmark': !iscritto}"></i>
-              <a class="card-link" ng-click="iscriviti()"
-                ng-class="{'card-link': !iscritto, 'card-link-iscritto': iscritto}">{{iscrittostringa}}</a>
+              <div ng-class="{'iscriviticlass': !iscritto, 'iscrittoclass': iscritto}">
+                <i ng-class="{'bi bi-bookmark-check-fill': iscritto, 'bi bi-bookmark': !iscritto}"></i>
+                <button ng-click="iscriviti()">{{iscrittostringa}}</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="footer-section">
+  <footer>
     <div class="container">
       <div class="row">
         <div class="col col-lg-12">
-          <div class="footer-body">
-            <h1 class="text-white title-paragraph"><a href="index.html">weAct</a></h1>
-            <p class="text-white">data-driven activism</p>
+          <div class="footer-body" role="navigation">
+            <a href="index.html"><span class="title-paragraph text-blue weact-logo">weAct</span></a>
+            <p class="text-blue">data-driven activism</p>
             <p class="text-blue">-</p>
             <div class="footernav">
               <ul>
@@ -182,7 +184,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>

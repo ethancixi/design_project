@@ -25,29 +25,15 @@ body {
 .title-paragraph {
   font-family: "DM Serif", serif;
 }
+.weact-logo{
+  font-size: 2.5rem;
+}
 .hero {
   height: 80vh;
   background-image: url(../assets/img/wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-.span_error_login {
-  color: $pastelred;
-  font-weight: 400;
-  font-size: 13px;
-}
-#check_validazione{
-  text-align: center;
-  border-radius: 12px;
-  width: 100%;
-  display: none;
-}
-#check_validazione i{
-  display: none;
-}
-#redirectmessage{
-  display: none;
 }
 .text-white b{
   color: $pastelyellow;
@@ -68,12 +54,33 @@ body {
   color: $navyblue;
 }
 .text-highlighted-yellow{
-  background-color: $pastelyellow;
+  background-color: #ffdba4b7;
 }
 .text-highlighted-pink{
-  background-color: $pastelpink;
+  background-color: #ce7777d3;
+}
+.text-highlighted-red{
+  background-color: #ce7777e7; //#2b3a55d8;
 }
 
+//REGISTRAZIONE
+.span_error_login {
+  color: $pastelred;
+  font-weight: 400;
+  font-size: 13px;
+}
+#check_validazione{
+  text-align: center;
+  border-radius: 12px;
+  width: 100%;
+  display: none;
+}
+#check_validazione i{
+  display: none;
+}
+#redirectmessage{
+  display: none;
+}
 //INDEX
 .watch_card{
   text-align: center;
@@ -87,20 +94,19 @@ body {
   padding: 3rem;
 }
 .watch_card #day{
-  font-size: 40px;
+  font-size: 2rem;
 }
 .watch_card #dayweek{
-  font-size: 50px;
+  font-size: 2.5rem;
   font-family: "Prata", serif;
   color: $pastelyellow;
 }
 .watch_card #hour{
-  font-size: 50px;
+  font-size: 2.75rem;
   font-family: Prata;
 }
 .calendar{
-  margin-top: -1rem;
-  font-size: 20px;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 .calendar span{
@@ -108,11 +114,11 @@ body {
 }
 .giornoattuale{
   color: $pastelyellow;
-  font-size: 25px;
+  font-size: 1.6rem;
   font-weight: 400;
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 10px;
+  text-underline-offset: 0.6rem;
 }
 .watch_card img{
   width: 100%;
@@ -122,27 +128,27 @@ body {
 }
 .mydata{
   list-style-type: none;
-  font-size: 40px;
+  font-size: 2rem;
 }
 .year{
-  font-size: 25px;
+  font-size: 1.75rem;
 }
 .money{
-  font-size: 35px;
+  font-size: 2rem;
   font-family: "Prata", serif;
 }
 .soldiraccolti{
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: "Prata", serif;
 }
 .primarigasoldi{
   color: $pastelyellow;
 }
 .primarigasoldi .year{
-  font-size: 35px;
+  font-size: 2.2rem;
 }
 .primarigasoldi .money{
-  font-size: 45px;
+  font-size: 2.5rem;
 }
 .carosello{
   background-color: white;
@@ -167,9 +173,9 @@ body {
 }
 
 .carosello-body button:hover {
-  color: $pastelred;
-  border: 1.5px solid $pastelred;
-  background-color: #ce77770c;
+  color: $pastelpink;
+  border: 1.5px solid $pastelpink;
+  background-color: #e8c4c417;
 }
 
 .carosello-body button:disabled{
@@ -188,18 +194,26 @@ body {
 }
 
 //EVENTI
-.card-link{
-  cursor: pointer;
+.card-title{
+  font-size: 1.35rem;
 }
-.card-link:hover{
+.iscriviticlass button{
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  color: $lightblue;
+  text-decoration: underline;
+}
+.iscriviticlass:hover button{
   color: $pastelred;
 }
-.card-link-iscritto{
-  text-decoration: none;
-  color: black;
-  cursor: not-allowed;
+.iscriviticlass:hover i{
+  color: $pastelred;
 }
-.card-link-iscritto:hover{
+.iscrittoclass button{
+  border: none;
+  background-color: white;
+  cursor: not-allowed;
   color: black;
   text-decoration: none;
 }
@@ -331,7 +345,7 @@ body {
   padding: 2rem;
 }
 //ABOUT
-.footer-section{
+footer{
   text-align: center;
   background-color: $pastelpink;
   margin-top: 5rem;
@@ -341,18 +355,18 @@ body {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
-.footer-body h1 a{
-  color: white;
+.footer-body a{
+  color: $navyblue;
   text-decoration: none;
 }
-.footer-body h1 a:hover{
+.footer-body a:hover{
   color: $lightblue;
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
 .footernav ul li a{
   text-decoration: none;
-  color: $lightblue;
+  color: $navyblue;
   padding: 1rem;
 }
 .footernav ul{
@@ -393,16 +407,31 @@ body {
   margin-right: 0.3rem;
 }
 .about_link-body ul li a{
-  border: 1px solid $pastelred;
-  padding-top: 0.9rem;
-  padding-bottom: 1.1rem;
+  border: 1px solid $navyblue;
+  padding-top: 0.8rem;
+  padding-bottom: 1.2rem;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
   border-radius: 40px;
-  color: $pastelred;
+  color: $navyblue;
   text-decoration: none;
 }
 .about_link-body ul li a:hover{
-  background-color: $pastelred;
+  background-color: $navyblue;
+  color: $pastelyellow;
+}
+.about_link-body ul li button{
+  background-color: $pastelyellow;
+  border: 1px solid $navyblue;
+  padding-top: 0.8rem;
+  padding-bottom: 1.2rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  border-radius: 40px;
+  color: $navyblue;
+  text-decoration: none;
+}
+.about_link-body ul li button:hover{
+  background-color: $navyblue;
   color: $pastelyellow;
 }
