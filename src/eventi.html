@@ -82,7 +82,11 @@
                   per l'associazione, come il bilancio, le attività svolte e i progetti futuri.
                 </p>
               </div>
-              </p>
+              <div ng-mouseover="iscrittivisibile=true" ng-mouseLeave="iscrittivisibile=false">
+                <br>
+                <i ng-class="{'bi bi-eye-fill': iscrittivisibile, 'bi bi-eye-slash-fill': !iscrittivisibile}"></i>
+                <span ng-if="!iscrittivisibile">-- iscritti</span><span ng-if="iscrittivisibile">54 iscritti</span>
+              </div>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
@@ -118,7 +122,11 @@
                   sarà spazio anche per le domande del pubblico, quindi non esitate a portare con voi tutte le vostre
                   domande e curiosità.</p>
               </div>
-              </p>
+              <div ng-mouseover="iscrittivisibile=true" ng-mouseLeave="iscrittivisibile=false">
+                <br>
+                <i ng-class="{'bi bi-eye-fill': iscrittivisibile, 'bi bi-eye-slash-fill': !iscrittivisibile}"></i>
+                <span ng-if="!iscrittivisibile">-- iscritti</span><span ng-if="iscrittivisibile">103 iscritti</span>
+              </div>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
@@ -181,7 +189,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
   <script>
-    var app = angular.module('myApp', ['ngAnimate']);
+    var app = angular.module('myApp', []);
     //devo per forza avere tanti controller quanti eventi, per poter controllare in 
     //modo separato tutte le tendine per leggere il copy.
     app.controller('evento1Ctrl', function ($scope) {
