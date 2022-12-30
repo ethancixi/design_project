@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,10 +13,12 @@
 </head>
 
 <body>
+  
   <nav class="navbar navbar-expand-lg bg-transparent position-fixed position-sticky pb-2">
     <div class="container-fluid">
+      <a href="#main" class="skip">Vai al contenuto principale</a>
       <a href="index.html" class="navbar-brand" aria-current="page">
-        <span class="title-paragraph text-white weact-logo">weAct</span>
+        <span class="title-paragraph text-white weact-logo" lang="en">weAct</span>
       </a>
       <button class="navbar-toggler btn-close-white" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -38,19 +40,19 @@
             <a class="nav-link active text-white" href="articoli.html">Articoli</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" href="about.html">About</a>
+            <a class="nav-link active text-white" href="about.html" lang="en">About</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <header class="hero d-flex justify-content-center align-items-center">
+  <header class="hero d-flex justify-content-center align-items-center" id="main">
     <div class="row">
       <div class="column">
-        <h1 class="text-black title-paragraph text-center text-highlighted-yellow">
+        <h1 class="text-black title-paragraph text-center text-highlighted-yellow" lang="en">
           weAct
         </h1>
-        <p class="text-black text-center text-highlighted-yellow">
+        <p class="text-black text-center text-highlighted-yellow" lang="en">
           data-driven activism for the planet
         </p>
       </div>
@@ -65,7 +67,7 @@
             <div class="watch_card">
               <div class="watch_card-body">
                 <p>
-                  <span class="title-paragraph" id="dayweek">{{date | date:"EEEE"}}</span><span id="day"> &sdot; {{date
+                  <span class="title-paragraph" id="dayweek" lang="en">{{date | date:"EEEE"}}</span><span id="day"> &sdot; {{date
                     |
                     date:"dd.MM.yyyy"}}</span>
                 </p>
@@ -116,7 +118,7 @@
           </div>
         </div>
         <div class="col col-12 col-lg-5 p-3">
-          <h2 class="text-white title-paragraph">Data-driven activism for the planet</h2>
+          <h2 class="text-white title-paragraph" lang="en">Data-driven activism for the planet</h2>
           <p class="text-white">
             Una forma di attivismo guidata dai dati è quella che si basa sull'<b>utilizzo di dati e informazioni
               scientifiche per sostenere le proprie richieste e le proprie campagne</b>.<br><br> In questo modo, gli
@@ -141,8 +143,8 @@
       <div class="row">
         <div class="col col-lg-12">
           <div class="footer-body">
-            <a href="index.html"><span class="title-paragraph text-blue weact-logo">weAct</span></a>
-            <p class="text-blue">data-driven activism</p>
+            <a href="index.html"><span class="title-paragraph text-blue weact-logo" lang="en">weAct</span></a>
+            <p class="text-blue" lang="en">data-driven activism</p>
             <p class="text-blue">-</p>
             <div class="footernav">
               <ul>
@@ -159,12 +161,12 @@
                   <a href="articoli.html">Articoli</a>
                 </li>
                 <li>
-                  <a href="about.html">About</a>
+                  <a href="about.html" lang="en">About</a>
                 </li>
               </ul>
             </div>
             <p class="text-blue">-</p>
-            <p class="text-lightpink">Copyright ©2022 All rights reserved</p>
+            <p class="text-lightpink" lang="en">Copyright ©2022 All rights reserved</p>
           </div>
         </div>
       </div>

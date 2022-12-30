@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
   <meta charset="UTF-8" />
@@ -14,8 +14,9 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-transparent position-fixed position-sticky pb-2" role="navigation">
     <div class="container-fluid">
+      <a href="#mainarticoli" class="skip">Vai al contenuto principale</a>
       <a href="index.html" class="navbar-brand">
-        <span class="title-paragraph text-white weact-logo">weAct</span>
+        <span class="title-paragraph text-white weact-logo" lang="en">weAct</span>
       </a>
       <button class="navbar-toggler btn-close-white" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -37,14 +38,14 @@
             <a class="nav-link active text-white" aria-current="page" href="articoli.html">Articoli</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" href="about.html">About</a>
+            <a class="nav-link active text-white" href="about.html" lang="en">About</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <header class="hero d-flex justify-content-center align-items-center"
-    style="background-image: url(../assets/img/articoli.jpg)">
+    style="background-image: url(../assets/img/articoli.jpg)" id="mainarticoli">
     <div class="row">
       <div class="column">
         <h1 class="text-white title-paragraph text-center text-highlighted-pink">Articoli</h1>
@@ -56,12 +57,13 @@
   <section>
     <div class="container">
       <div class="row">
-        <div class="col col-lg-12">
+        <div class="col col-lg-10">
           <br>
-          <p class="text-white">I nostri articoli sono forniti con una copertura imparziale e accurata dei fatti, cercando di offrire una versione imparziale e accurata degli eventi.</p>
+          <p class="text-white">I nostri articoli sono forniti con una copertura imparziale e accurata dei fatti,
+            cercando di offrire una versione imparziale e accurata degli eventi.</p>
         </div>
       </div>
-      <hr style="color: white;">
+      <hr class="text-white">
       <!--Articolo 1-->
       <div class="row">
         <div class="col col-lg-12">
@@ -74,12 +76,21 @@
       </div>
       <br>
       <div class="row">
-        <div class="col col-lg-7">
+        <div class="col col-lg-12">
           <p class="text-white">L'energia rinnovabile è una fonte di energia che può essere utilizzata in modo
             <b>sostenibile e inesauribile</b>, poiché si basa su fonti di energia che si rigenerano naturalmente. Le
             fonti di
             energia rinnovabile includono il <b>sole, il vento, l'acqua, la biomasse e geotermica</b>.
-            <br><br>
+            <br>
+          </p>
+          <div class="image-box" style="float: left;">
+            <img src="../assets/img/articoli/img_articoli/img1.jpg"
+              alt="Immagine di un'area molto vasta coperta da pannelli solari. In lontananza si notano delle catene montuose.">
+            <p>Molti paesi stanno investendo in questa
+              tecnologia e stanno adottando obiettivi ambiziosi per aumentare la quota di energia rinnovabile nella loro
+              produzione di energia.</p>
+          </div>
+          <p class="text-white">
             Negli ultimi anni, l'<b>utilizzo</b> dell'energia rinnovabile è <b>aumentato in tutto il mondo</b>, poiché
             rappresenta
             un'alternativa alle fonti di energia non rinnovabili come il petrolio, il carbone e il gas naturale.
@@ -105,131 +116,131 @@
             rinnovabile diventi <b>sempre più importante nei prossimi anni</b>.
           </p>
         </div>
-        <div class="col col-lg-5">
-          <div class="image-box">
-            <img src="../assets/img/articoli/img_articoli/img1.jpg" alt="Immagine di un'area molto vasta coperta da pannelli solari. In lontananza si notano delle catene montuose.">
-            <p>Molti paesi stanno investendo in questa
-              tecnologia e stanno adottando obiettivi ambiziosi per aumentare la quota di energia rinnovabile nella loro
-              produzione di energia.</p>
+      </div>
+      <hr class="text-white">
+      <!--Articolo 2-->
+      <div class="row">
+        <div class="col col-lg-12">
+          <h2 class="title-paragraph text-white">Promuovere la sostenibilità della pesca: perché è importante e come
+            fare
+          </h2>
+          <div class="author-paragraph text-white">
+            <img src="../assets/img/articoli/author.png" alt="">
+            <span>Giovanni Bianchi &sdot; 20/08/2022</span>
           </div>
         </div>
       </div>
-      <<hr style="color: white;">
-        <!--Articolo 2-->
-        <div class="row">
-          <div class="col col-lg-12">
-            <h2 class="title-paragraph text-white">Promuovere la sostenibilità della pesca: perché è importante e come
-              fare
-            </h2>
-            <div class="author-paragraph text-white">
-              <img src="../assets/img/articoli/author.png" alt="">
-              <span>Giovanni Bianchi &sdot; 20/08/2022</span>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="row">
-          <div class="col col-lg-5">
-            <div class="image-box">
-              <img src="../assets/img/articoli/img_articoli/img2.jpg" alt="Tre pescatori gettano dalle proprie piccole imbarcazioni le proprio reti; ognuna in una direzione diversa.">
-              <p>E' importante promuovere la consapevolezza sulla sostenibilità della pesca attraverso l'educazione
-                e la sensibilizzazione delle persone. Maggiore è la consapevolezza dei consumatori sull'impatto della
-                pesca sull'ambiente, maggiore sarà la pressione per promuovere pratiche di pesca sostenibili.</p>
-            </div>
-          </div>
-          <div class="col col-lg-7">
-            <p class="text-white">La <b>sostenibilità della pesca</b> è un argomento di grande importanza per l'ambiente
-              e per
-              l'economia mondiale. La pesca è una fonte di cibo e di lavoro per milioni di persone in tutto il mondo, ma
-              se non viene gestita in modo sostenibile, può causare <b>danni irreversibili</b> all'ecosistema marino e
-              alla
-              biodiversità.
-              <br><br>
-              Uno dei principali problemi della pesca non sostenibile è l'<b>eccessiva cattura di specie al di fuori
-                della
-                loro taglia ideale o della loro età riproduttiva</b>. Questo può portare alla <b>sovrappopolazione</b>
-              di alcune
-              specie e all'<b>estinzione</b> di altre, alterando l'equilibrio naturale degli ecosistemi marini. Inoltre,
-              l'utilizzo di metodi di pesca non sostenibili, come le reti a strascico o le bombe chimiche, può
-              <b>danneggiare gli habitat marini</b> e uccidere specie non target, conosciute come "catture accessorie" o
-              "morti
-              per incidentalità".
-              <br><br>
-              Per garantire la sostenibilità della pesca, è importante che le attività di pesca siano regolate da leggi
-              e regolamenti adeguati che impongano pratiche sostenibili e limitino le catture di specie a rischio o
-              protette. Inoltre, è fondamentale che le attività di pesca siano gestite in modo responsabile e che si
-              tenga traccia delle catture per assicurare che non si superino i limiti di sostenibilità.
-              <br><br>
-              Un altro modo per promuovere la sostenibilità della pesca è attraverso l'acquisto di pesce sostenibile.
-              Esistono diverse organizzazioni che si occupano di valutare e certificare il pesce in base alla
-              sostenibilità della sua cattura, come il <b>Marine Stewardship Council</b> (MSC) o il Best Aquaculture
-              Practices
-              (BAP). Scegliere di acquistare solo pesce certificato può aiutare a sostenere le attività di pesca
-              sostenibili e a proteggere gli ecosistemi marini.
-              <br><br>
-              Inoltre, è importante promuovere la <b>consapevolezza</b> sulla sostenibilità della pesca attraverso
-              l'educazione
+      <br>
+      <div class="row">
+        <div class="col col-lg-12">
+          <p class="text-white">La <b>sostenibilità della pesca</b> è un argomento di grande importanza per l'ambiente
+            e per
+            l'economia mondiale. La pesca è una fonte di cibo e di lavoro per milioni di persone in tutto il mondo, ma
+            se non viene gestita in modo sostenibile, può causare <b>danni irreversibili</b> all'ecosistema marino e
+            alla
+            biodiversità.
+            <br>
+          </p>
+          <div class="image-box" style="float: right;">
+            <img src="../assets/img/articoli/img_articoli/img2.jpg"
+              alt="Tre pescatori gettano dalle proprie piccole imbarcazioni le proprio reti; ognuna in una direzione diversa.">
+            <p>E' importante promuovere la consapevolezza sulla sostenibilità della pesca attraverso l'educazione
               e la sensibilizzazione delle persone. Maggiore è la consapevolezza dei consumatori sull'impatto della
-              pesca sull'ambiente, maggiore sarà la pressione per promuovere pratiche di pesca sostenibili.
-              <br><br>
-              In conclusione, la sostenibilità della pesca è essenziale per proteggere gli ecosistemi marini e garantire
-              la sicurezza
-            </p>
+              pesca sull'ambiente, maggiore sarà la pressione per promuovere pratiche di pesca sostenibili.</p>
+          </div>
+          <p class="text-white">
+            Uno dei principali problemi della pesca non sostenibile è l'<b>eccessiva cattura di specie al di fuori
+              della
+              loro taglia ideale o della loro età riproduttiva</b>. Questo può portare alla <b>sovrappopolazione</b>
+            di alcune
+            specie e all'<b>estinzione</b> di altre, alterando l'equilibrio naturale degli ecosistemi marini. Inoltre,
+            l'utilizzo di metodi di pesca non sostenibili, come le reti a strascico o le bombe chimiche, può
+            <b>danneggiare gli habitat marini</b> e uccidere specie non target, conosciute come "catture accessorie" o
+            "morti
+            per incidentalità".
+            <br><br>
+            Per garantire la sostenibilità della pesca, è importante che le attività di pesca siano regolate da leggi
+            e regolamenti adeguati che impongano pratiche sostenibili e limitino le catture di specie a rischio o
+            protette. Inoltre, è fondamentale che le attività di pesca siano gestite in modo responsabile e che si
+            tenga traccia delle catture per assicurare che non si superino i limiti di sostenibilità.
+            <br><br>
+            Un altro modo per promuovere la sostenibilità della pesca è attraverso l'acquisto di pesce sostenibile.
+            Esistono diverse organizzazioni che si occupano di valutare e certificare il pesce in base alla
+            sostenibilità della sua cattura, come il <b>Marine Stewardship Council</b> (MSC) o il Best Aquaculture
+            Practices
+            (BAP). Scegliere di acquistare solo pesce certificato può aiutare a sostenere le attività di pesca
+            sostenibili e a proteggere gli ecosistemi marini.
+            <br><br>
+            Inoltre, è importante promuovere la <b>consapevolezza</b> sulla sostenibilità della pesca attraverso
+            l'educazione
+            e la sensibilizzazione delle persone. Maggiore è la consapevolezza dei consumatori sull'impatto della
+            pesca sull'ambiente, maggiore sarà la pressione per promuovere pratiche di pesca sostenibili.
+            <br><br>
+            In conclusione, la sostenibilità della pesca è essenziale per proteggere gli ecosistemi marini e garantire
+            la sicurezza
+          </p>
+        </div>
+      </div>
+      <hr class="text-white">
+      <!--Articolo 3-->
+      <div class="row">
+        <div class="col col-lg-12">
+          <h2 class="title-paragraph text-white">L'energia geotermica: una fonte di energia rinnovabile e pulita</h2>
+          <div class="author-paragraph text-white">
+            <img src="../assets/img/articoli/author.png" alt="">
+            <span>Lorenzo Giordano &sdot; 04/01/2023</span>
           </div>
         </div>
-        <<hr style="color: white;">
-          <!--Articolo 3-->
-          <div class="row">
-            <div class="col col-lg-12">
-              <h2 class="title-paragraph text-white">L'energia geotermica: una fonte di energia rinnovabile e pulita</h2>
-              <div class="author-paragraph text-white">
-                <img src="../assets/img/articoli/author.png" alt="">
-                <span>Lorenzo Giordano &sdot; 04/01/2023</span>
-              </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col col-lg-12">
+          <p class="text-white">L'energia geotermica è una fonte di energia rinnovabile che <b>sfrutta il calore della
+              Terra</b> per produrre energia elettrica o per il riscaldamento. Si tratta di una delle fonti di energia
+            più
+            pulite e sostenibili disponibili, poiché <b>non produce emissioni di gas serra</b> e può essere utilizzata
+            per
+            un periodo di tempo molto lungo.
+            <br></p>
+            <div class="image-box" style="float: left;">
+              <img src="../assets/img/articoli/img_articoli/img3.jpg"
+                alt="Fotografia che illustra il vapore emanato nell'aria da un lago vulcanico">
+              <p>L'energia geotermica è anche una fonte di energia stabile e
+                affidabile, poiché il calore della Terra è presente in modo costante e può essere utilizzato in
+                qualsiasi momento.</p>
             </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col col-lg-7">
-              <p class="text-white">L'energia geotermica è una fonte di energia rinnovabile che <b>sfrutta il calore della
-                Terra</b> per produrre energia elettrica o per il riscaldamento. Si tratta di una delle fonti di energia più
-                pulite e sostenibili disponibili, poiché <b>non produce emissioni di gas serra</b> e può essere utilizzata per
-                un periodo di tempo molto lungo.
-                <br><br>
-                L'energia geotermica viene prodotta attraverso il <b>riscaldamento dell'acqua o della terra, che viene
-                quindi utilizzata per generare vapore</b>. Il vapore viene a sua volta utilizzato per azionare <b>turbine</b>, che
-                producono <b>energia elettrica</b>.
-                <br><br>
-                Esistono diversi tipi di impianti geotermici, tra cui quelli a circolazione naturale, a circolazione
-                forzata e a sorgente calda. Gli impianti a <b>circolazione naturale</b> sfruttano il calore del sottosuolo per
-                riscaldare l'acqua o il vapore, che viene quindi utilizzato per generare energia elettrica. Gli impianti
-                a <b>circolazione forzata</b> utilizzano un fluido refrigerante per trasportare il calore dal sottosuolo alla
-                superficie, dove viene utilizzato per produrre energia elettrica. Gli impianti a <b>sorgente calda</b>, infine,
-                sfruttano le sorgenti calde naturali presenti nel sottosuolo per riscaldare l'acqua o il vapore, che
-                viene quindi utilizzato per generare energia elettrica.
-                <br><br>
-                L'energia geotermica presenta diverse vantaggi rispetto ad altre fonti di energia. In primo luogo, è una
-                fonte di energia rinnovabile e inesauribile, poiché il calore della Terra è una risorsa inesauribile.
-                Inoltre, l'energia geotermica è una fonte di energia pulita, poiché non produce emissioni di gas serra o
-                altri inquinanti atmosferici. Infine, l'energia geotermica è anche una <b>fonte di energia stabile e
-                affidabile</b>, poiché il calore della Terra è presente in modo costante e può essere utilizzato in
-                qualsiasi momento.
-                <br><br>
-                Tuttavia, l'energia geotermica presenta anche alcuni <b>svantaggi</b>. In primo luogo, gli impianti geotermici
-                possono essere costosi da costruire e da mantenere. Inoltre, alcune tecnologie geotermiche, come gli
-                impianti a circolazione forzata, possono essere rumorose e possono disturbare gli abitanti delle aree
-                circostanti.
-              </p>
-            </div>
-            <div class="col col-lg-5">
-              <div class="image-box">
-                <img src="../assets/img/articoli/img_articoli/img3.jpg" alt="Fotografia che illustra il vapore emanato nell'aria da un lago vulcanico">
-                <p>L'energia geotermica è anche una fonte di energia stabile e
-                  affidabile, poiché il calore della Terra è presente in modo costante e può essere utilizzato in
-                  qualsiasi momento.</p>
-              </div>
-            </div>
-          </div>
+            <p class="text-white">
+            L'energia geotermica viene prodotta attraverso il <b>riscaldamento dell'acqua o della terra, che viene
+              quindi utilizzata per generare vapore</b>. Il vapore viene a sua volta utilizzato per azionare
+            <b>turbine</b>, che
+            producono <b>energia elettrica</b>.
+            <br><br>
+            Esistono diversi tipi di impianti geotermici, tra cui quelli a circolazione naturale, a circolazione
+            forzata e a sorgente calda. Gli impianti a <b>circolazione naturale</b> sfruttano il calore del sottosuolo
+            per
+            riscaldare l'acqua o il vapore, che viene quindi utilizzato per generare energia elettrica. Gli impianti
+            a <b>circolazione forzata</b> utilizzano un fluido refrigerante per trasportare il calore dal sottosuolo
+            alla
+            superficie, dove viene utilizzato per produrre energia elettrica. Gli impianti a <b>sorgente calda</b>,
+            infine,
+            sfruttano le sorgenti calde naturali presenti nel sottosuolo per riscaldare l'acqua o il vapore, che
+            viene quindi utilizzato per generare energia elettrica.
+            <br><br>
+            L'energia geotermica presenta diverse vantaggi rispetto ad altre fonti di energia. In primo luogo, è una
+            fonte di energia rinnovabile e inesauribile, poiché il calore della Terra è una risorsa inesauribile.
+            Inoltre, l'energia geotermica è una fonte di energia pulita, poiché non produce emissioni di gas serra o
+            altri inquinanti atmosferici. Infine, l'energia geotermica è anche una <b>fonte di energia stabile e
+              affidabile</b>, poiché il calore della Terra è presente in modo costante e può essere utilizzato in
+            qualsiasi momento.
+            <br><br>
+            Tuttavia, l'energia geotermica presenta anche alcuni <b>svantaggi</b>. In primo luogo, gli impianti
+            geotermici
+            possono essere costosi da costruire e da mantenere. Inoltre, alcune tecnologie geotermiche, come gli
+            impianti a circolazione forzata, possono essere rumorose e possono disturbare gli abitanti delle aree
+            circostanti.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
   <footer>
@@ -237,8 +248,8 @@
       <div class="row">
         <div class="col col-lg-12">
           <div class="footer-body" role="navigation">
-            <a href="index.html"><span class="title-paragraph text-blue weact-logo">weAct</span></a>
-            <p class="text-blue">data-driven activism</p>
+            <a href="index.html"><span class="title-paragraph text-blue weact-logo" lang="en">weAct</span></a>
+            <p class="text-blue" lang="en">data-driven activism</p>
             <p class="text-blue">-</p>
             <div class="footernav">
               <ul>
@@ -260,7 +271,7 @@
               </ul>
             </div>
             <p class="text-blue">-</p>
-            <p class="text-lightpink">Copyright ©2022 All rights reserved</p>
+            <p class="text-lightpink" lang="en">Copyright ©2022 All rights reserved</p>
           </div>
         </div>
       </div>

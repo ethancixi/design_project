@@ -62,6 +62,27 @@ body {
 .text-highlighted-red{
   background-color: #ce7777e7; //#2b3a55d8;
 }
+.skip{
+  background-color: $pastelred;
+  color: white;
+  position: absolute;
+  padding: 1rem;
+  margin-right: 2rem;
+  left: -1000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+.skip:hover {
+  color: $darkblue;
+}
+
 
 //REGISTRAZIONE
 .span_error_login {
@@ -80,6 +101,10 @@ body {
 }
 #redirectmessage{
   display: none;
+}
+.mandatory{
+  font-weight: 400;
+  color: $pastelred;
 }
 //INDEX
 .watch_card{
@@ -332,6 +357,8 @@ body {
   margin-left: 0.5rem;
 }
 .image-box{
+  max-width: 28rem;
+  margin: 2rem;
   background-color: white;
   border-radius: 24px;
   text-align: center;
