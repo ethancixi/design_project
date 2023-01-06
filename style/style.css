@@ -308,7 +308,8 @@ body {
 
 .div-copy:hover {
   text-decoration: underline;
-  text-decoration-color: #ce7777;
+  -webkit-text-decoration-color: #ce7777;
+          text-decoration-color: #ce7777;
   cursor: pointer;
 }
 
@@ -554,6 +555,4 @@ footer {
 .about_link-body ul li button:hover {
   background-color: #2b3a55;
   color: #ffdba4;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
